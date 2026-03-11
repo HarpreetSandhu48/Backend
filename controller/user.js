@@ -191,6 +191,7 @@ const search=async(req,res)=>{
     res.status(200).json(users);
   } catch (error) {
     res.status(500).json({ message: "Error in search", error });
+    console.log('error')
   }
 }
 
